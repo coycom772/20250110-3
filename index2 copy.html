@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>메종 오브제</title>
+    <style>
+      /*reset*/
+      * {margin:0; box-sizing:border-box;}
+      ul,ol,li {list-style:none; margin:0; padding:0;}
+
+      header {width: 1260px; height: 187px; background-color: aqua; margin:0 auto;}
+      .top-banner {width: 100%; height: 55px; margin:0 auto; background-color: #f97352; color: white; padding: 10px; font-size: 14px; position: relative;}
+      .top-banner button { background-color: white; color: #f97352; border: none; padding: 5px 10px; border-radius: 20px; font-weight: bold; cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+      .top-banner > h3 {text-align:center; margin: 0 auto;}
+
+      #logo {width: 200px; height: 50px; background-color: gold; float: left; margin:80px 0 0 0px;}
+      #logo > img {width:100%; height:100%;}
+
+      #login {width: 580px; height: 40px; margin:400px 100px 0 40px; background-color: #33bb82; border-bottom: 1px solid #ddd; float:left;}
+      #login > ul {font-size: 17px;}
+      #login > ul > li {color: black; text-decoration: none; margin: 0 5px; float:left;}
+      #login > ul > li:hover {text-decoration: underline;}
+      #login > ul > li > a {text-decoration:none; color: black;}
+      #search-bar {display: flex; align-items: center; float:right; margin: 0px 10px 40px 50px;}
+      #search-bar input {padding: 5px; font-size: 14px; border: 1px solid #ddd; border-radius: 5px;}
+      #search-bar button {background-color: #f97352; color: white; border: none; padding: 5px 10px; margin-left: 5px; border-radius: 5px; cursor: pointer;}
+
+      .bottom-menu { display: flex;  justify-content: center;  background-color: white;  border-top: 1px solid ddd; padding: 10px 0;}
+      .bottom-menu a {margin: 0 15px;  text-decoration: none;  color: black;  font-size: 14px;  font-weight: bold;}
+      .bottom-menu a:hover {color: #f97352;}
+
+      .menu {width: 776px; height: 35px; background-color: #00ff2a; float: right; margin: 80px 0 0 10px;}
+      .menu > ul {font-size: 16px;}
+      .menu > ul > li {float:left; margin:0 40px; }
+      .menu > ul > li > a {text-decoration:none; color:#555}
+      .inner {width: 1260px; height: 52px; background-color: green; margin:0 auto;}
+
+      #slider {width: 1261px; height: 829px; background-color: blueviolet; margin:0 auto;}
+
+      section {width: 1260px; height: 1175px; background-color: tomato; margin:0 auto;}
+      .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px;}
+      .card {background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center;}
+      .card > img {width: 100%; height: auto; object-fit: cover;}
+      card-content {padding: 15px;}
+      .card > h3 {font-size: 18px; margin: 10px 0; color: #333;}
+      .card > .price {margin: 10px 0; font-size: 16px; color: #555;}
+      .original-price {text-decoration: line-through; color: #999; margin-right: 10px;}
+      .sale-price {color: #e74c3c; font-weight: bold;}
+      .expired {color: #999; font-size: 14px;}
+      .member-benefit {background-color: #fff5f5; display: flex; flex-direction: column; justify-content: center; align-items: center;  padding: 20px;}
+      .member-benefit h3 {font-size: 18px; color: #e74c3c; margin-bottom: 10px;}
+      .member-benefit button {background-color: #e74c3c; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;}
+      .member-benefit button:hover {background-color: #d62c1a;}
+      section > #sec2 {width: 1260px; height: 1175px; background-color: burlywood; margin:0 auto;}
+      #product {width:1250px; height:83px; background-color:#555; margin:0 auto; padding: 20px; 0px; 28px; box-sizing:border-box;}
+      #product > h3 {font-size:26px; color:#000; text-align:left; font-weight: 700; background-color:tomato;}
+      #product > .box {width:280px; height:340px; background-color:red; float:left; margin: 50px 10px;}    
+
+      footer {width: 1260px; height: 530px; background-color: rgb(52, 5, 83); margin:0 auto;}
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 상단 배너 -->
+    <div class="top-banner">
+      <h3>메종오브제 신규 회원가입 빵빵한 혜택안내</h3>
+      <button>GO</button>
+    </div>
+
+<header>
+
+      <div id="logo"><img src="https://maison-objet.co.kr/web/upload/logo/top_logo.svg" alt="logo"></div>
+
+    <div id="login">
+      <ul>
+        <li><a href="#">로그인</a> | </li>
+        <li><a href="#">회원가입</a> | </li>
+        <li><a href="#">장바구니(0)</a> | </li>
+        <li><a href="#">주문조회</a> | </li>
+        <li><a href="#">마이페이지</a> | </li>
+        <li><a href="#">COMMUNITY</a>
+      </ul>
+    </div>
+
+    <div id="search-bar">
+      <input type="text" placeholder="검색어를 입력하세요">
+      <button>🔍</button>
+    </div>
+
+</header>
+
+  <!-- 하단 메뉴 -->
+  <nav class="bottom-menu">
+    <a href="#">BEST</a>
+    <a href="#">SALE</a>
+    <a href="#">BRAND</a>
+    <a href="#">PRODUCTS</a>
+    <a href="#">이벤트</a>
+    <a href="#">기획전</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">매거진</a>
+  </nav>
+
+
+<div id="slider"><img src="" alt="슬라이더 이미지"></div>
+
+<section>
+
+  <div class="container">    
+    <div class="card">
+      <img src="https://maison-objet.co.kr/web/product/extra/big/202411/7c5a69113328d2b4da6a81d4a37af35a.jpg" alt="유리머그컵">
+      <div class="card-content">
+        <h3>몬즈 베이직 내열 컬러글라스 유리머그컵<br>340ml</h3>
+        <p class="expired">타임딜이 종료되었습니다.</p>
+        <p class="price">
+          <span class="original-price">18,000원</span>
+          <span class="sale-price">6,900원</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card member-benefit">
+      <h3>새롭게 바뀐<br>회원 등급별 혜택</h3>
+      <button>이벤트 보러가기</button>
+    </div>
+
+    <div class="card">
+      <img src="" alt="연말 글라스">
+      <div class="card-content">
+        <h3>연말맞이 홈파티 글라스 모음전</h3>
+        <p class="price">9,900원~</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="" alt="먹기 좋은 세트">
+      <div class="card-content">
+        <h3>활용도 좋은 먹기 모음전</h3>
+        <p class="price">5,900원~</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="sec2">
+    <div id="product">
+      <h3>베스트 상품</h3>            
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">4</div>  
+      <div class="box">4</div>  
+      <div class="box">4</div>  
+      <div class="box">4</div>              
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<footer>
+
+</footer>
+
+</body>
+</html>
